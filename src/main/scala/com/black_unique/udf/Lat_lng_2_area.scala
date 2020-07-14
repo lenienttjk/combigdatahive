@@ -13,6 +13,7 @@ import org.apache.http.util.EntityUtils
   * @Description:
   */
 
+// 必须使用 class 类文件，继承UDF
 class Lat_lng_2_area extends UDF {
 
   def evaluate(lat: String, lng: String): String = {
