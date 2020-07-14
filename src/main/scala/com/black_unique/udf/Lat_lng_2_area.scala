@@ -13,7 +13,7 @@ import org.apache.http.util.EntityUtils
   * @Description:
   */
 
-object Lat_lng_2_area extends UDF {
+class Lat_lng_2_area extends UDF {
 
   def evaluate(lat: String, lng: String): String = {
     //判断传入的数据是否合法
@@ -112,7 +112,7 @@ object Lat_lng_2_area extends UDF {
 
   }
 
-  def main(args: Array[String]): Unit = {
-    println(Lat_lng_2_area.evaluate("40.64178", "109.83859"))
-  }
+//  def main(args: Array[String]): Unit = {
+//    println(Lat_lng_2_area.evaluate("40.64178", "109.83859"))
+//  }
 }
